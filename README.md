@@ -34,10 +34,27 @@ It looks like it's overkill, too intensive and complex. overall a really bad ide
 
 ### Using an `NSImage`
 
+#### Links
+
+- https://developer.apple.com/documentation/appkit/nsimage?language=objc
+
+
 ### Direclty using an `CALayer`
 
+Subclass a `CALayer` and use it to draw the content. Check if a delegate object is needed or is a good approach.
 
-https://developer.apple.com/documentation/appkit/nsimage?language=objc
+use ` drawInContext` to draw in a view context. Maybe the delegate does this?!
+
+
+```
+- (void)drawInContext:(CGContextRef)ctx;
+```
+
+#### Links
+
+- https://developer.apple.com/documentation/quartzcore/calayer?language=objc
+
+
 
 # Credits
 
